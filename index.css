@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('images/fgghh.jpg'); 
+  background-image: url('/fgghh.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position:0%;
@@ -60,7 +60,7 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url('images/fgghh.jpg') no-repeat center center fixed;
+  background: url('/fgghh.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -371,7 +371,7 @@ body {
 .contact-section {
   display: flex;
   justify-content: space-between;
-  background: url('images/wallpaperflare-cropped.jpg') no-repeat center center;
+  background: url('/wallpaperflare-cropped.jpg') no-repeat center center;
   background-size: cover;
   padding: 20px 40px;
   color: #fff;

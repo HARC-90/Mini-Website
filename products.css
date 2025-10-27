@@ -1,5 +1,5 @@
 body {
-    background: url('images/fgghh.jpg') no-repeat center center fixed;
+    background: url('/fgghh.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
   }
@@ -159,7 +159,7 @@ text-align: center;
 .contact-section {
 display: flex;
 justify-content: space-between;
-background: url('images/wallpaperflare-cropped.jpg') no-repeat center center;
+background: url('/wallpaperflare-cropped.jpg') no-repeat center center;
 background-size: cover;
 padding: 20px 40px;
 color: #fff;
