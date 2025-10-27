@@ -1,0 +1,223 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', sans-serif;
+    align-items: center;
+    background-color: #000;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgb(155, 5, 147);
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo img {
+    height: 100px;
+    max-height: 120px;
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ac1ba0;
+    transform: scale(1.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .technology-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('images/fgghh.jpg') no-repeat center center/cover;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .technology-section h1 {
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px #494747;
+  }
+  
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .circle-card {
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100px) rotate(-30deg);
+    animation: rollInFade 1s ease forwards;
+  }
+  
+  .circle-card:nth-child(1) { animation-delay: 0.2s; }
+  .circle-card:nth-child(2) { animation-delay: 0.4s; }
+  .circle-card:nth-child(3) { animation-delay: 0.6s; }
+  .circle-card:nth-child(4) { animation-delay: 0.8s; }
+  .circle-card:nth-child(5) { animation-delay: 1s; }
+  .circle-card:nth-child(6) { animation-delay: 1.2s; }
+  
+  @keyframes rollInFade {
+    to {
+      opacity: 1;
+      transform: translateX(0) rotate(0);
+    }
+  }
+  
+  .circle-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(253, 253, 253);
+    transition: transform 0.3s;
+  }
+  
+  .circle-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(8, 0, 8);
+  }
+  
+  .circle-card h3 {
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-shadow: 2px 2px 5px #383434;
+  }
+  
+  .circle-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 0 10px;
+    text-shadow: 1px 1px 3px #383737;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    background: url('images/wallpaperflare-cropped.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px 40px;
+    color: #fff;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(155, 5, 147);
+    border-bottom: 2px solid rgb(155, 5, 147);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+  }
+  
+  .contact-left {
+    max-width: 48%;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .contact-logo {
+    width: 300px;
+    margin-bottom: 0px;
+  }
+  
+  .contact-left p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .trust-icons img {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .contact-right {
+    max-width: 48%;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .contact-right h3 {
+    font-size: 28px;
+    color: rgb(209, 0, 176);
+    margin-bottom: 20px;
+  }
+  
+  .contact-right p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .social-icons i {
+    margin-right: 8px;
+    color: rgb(209, 0, 176);
+  }
+  
+  .footer {
+    background-color: #000;
+    border-top: 2px solid rgb(155, 5, 147);
+    box-shadow: 0 -2px 10px #5c045444;
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .footer-links span {
+    color: #888;
+  }
